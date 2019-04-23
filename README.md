@@ -1,5 +1,15 @@
 # JQUERY
 jQuery 是一套兼容多浏览器的 javascript 脚本库. 核心理念是写得更少，做得更多.
+- [DOM对象和JQuery包装集对象](#dom对象和jquery包装集对象)
+    - [概念](#概念)
+    - [Dom对象](#dom对象)
+    - [JQUery包装集和对象](#JQUery包装集和对象)
+- [JQuery选择器](#jquery选择器)
+    - [基础选择器](#基础选择器)
+    - [层次选择器](#层次选择器)
+    - [表单选择器](#表单选择器)
+
+
 ## 官网
 去官网http://jquery.com/ 下载
 ## 版本
@@ -13,7 +23,7 @@ jQuery 是一套兼容多浏览器的 javascript 脚本库. 核心理念是写�
 ```<script src="js/jquery-2.1.4.js" type="text/javascript" ></script>```
 ## DOM对象和JQuery包装集对象
 ### 1.概念
-通过 js 代码获取的对象都是 dom 对象;
+通过 js 代码获取的对象都是 dom 对象
 而通过 jQuery获取的对象是 jQuery 包装集对象，简称 jQuery 对象;
 只有 jQuery 对象才能使用 jQuery 提供的方法。
 ### 2.Dom对象
@@ -249,6 +259,8 @@ $(‘元素内容’)即可
 |before()| 在元素前插入指定的元素或内容:$(selector).before(content)|
 |after()| 在元素后插入指定的元素或内容:$(selector).after(content)|
 
+prepend和append是在元素的子集内部添加
+before和after用于同辈之间添加
 
 ### 8.删除元素
 
